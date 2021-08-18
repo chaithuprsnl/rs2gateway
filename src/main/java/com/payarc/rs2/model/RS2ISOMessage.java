@@ -20,7 +20,7 @@ import org.springframework.stereotype.Component;
 import com.payarc.rs2.service.IsoUtils;
 
 @Component
-@PropertySource("classpath:rs2message.properties")
+//@PropertySource("classpath:rs2message.properties")
 public class RS2ISOMessage {
 
 	public HashMap<String, String> msgMap = new HashMap<>();

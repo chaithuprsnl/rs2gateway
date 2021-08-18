@@ -1,5 +1,8 @@
 package com.payarc.rs2.model;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+
 import org.springframework.stereotype.Component;
 
 /**
@@ -9,8 +12,10 @@ import org.springframework.stereotype.Component;
 @Component
 public class APIRequest {
 
+	@NotBlank
 	private String txn_type;
 	
+	@NotBlank
 	private String amount;
 	
 	private String card_number;
